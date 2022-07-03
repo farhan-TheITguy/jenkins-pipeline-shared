@@ -5,5 +5,4 @@
  */
 def call(String buildStatus = 'STARTED') {
   println "This is comming from shared liberary - ${buildStatus}"
-  println this
 }
