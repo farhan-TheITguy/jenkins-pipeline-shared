@@ -5,5 +5,5 @@
  */
 def call(String buildStatus = 'STARTED') {
   println "This is comming from shared liberary"
-  //println this.args
+  println this
 }
