@@ -4,6 +4,6 @@
  * Send notifications based on build status string
  */
 def call(String buildStatus = 'STARTED') {
-  println "This is comming from shared liberary"
+  println "This is comming from shared liberary - ${buildStatus}"
   println this
 }
