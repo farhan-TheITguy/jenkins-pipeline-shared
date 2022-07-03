@@ -21,18 +21,8 @@ def call(String buildStatus = 'STARTED') {
     colorCode = '#FFFF00'
   } else if (buildStatus == 'SUCCESSFUL') {
     color = 'GREEN'
-    colorCode = '#00FF00'
+    colorCode = '#00FF00'a
   }
-
-  // Send notifications
-  slackSend (color: colorCode, message: summary)
-
-  hipchatSend (color: color, notify: true, message: summary)
-
-  emailext (
-      to: 'bitwiseman@bitwiseman.com',
-      subject: subject,
-      body: details,
-      recipientProviders: [[$class: 'DevelopersRecipientProvider']]
-    )
+  println "This is comming from shared liberary"
+  println this.args
 }
