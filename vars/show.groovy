@@ -3,7 +3,7 @@
 /**
  * Send notifications based on build status string
  */
-def n = 1
+int n = 1
 def call(String buildStatus = 'STARTED') {
   println "This is comming from shared liberary"
   println this.args
