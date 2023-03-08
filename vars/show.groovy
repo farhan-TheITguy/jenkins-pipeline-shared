@@ -7,7 +7,7 @@ def n = 1
 def call(String buildStatus = 'STARTED') {
   println "This is comming from shared liberary"
   println this.args
-  if (n == n) {
+  if (n == 1) {
     println "Yeah!!, build has been started"
   } else {
     println "Ohh!! build not started"
