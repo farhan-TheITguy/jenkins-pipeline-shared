@@ -4,12 +4,14 @@
  * Send notifications based on build status string
  */
 def call(String buildStatus = 'STARTED') {
-  int n = 1
+  int a = 2
   println "This is comming from shared liberary"
   println this.args
-  if (n == 1) {
-    println "Yeah!!, build has been started"
-  } else {
-    println "Ohh!! build not started"
-  }
+  if (a<100) { 
+     //If the condition is true print the following statement 
+     println("The value is less than 100"); 
+  } else { 
+     //If the condition is false print the following statement 
+     println("The value is greater than 100"); 
+  } 
 }
