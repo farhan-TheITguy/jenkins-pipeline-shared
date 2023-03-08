@@ -8,4 +8,7 @@ def call(String buildStatus = 'STARTED') {
   println this.args
   if (buildStatus == 'STARTED') {
     println "Yeah!!, build has been started"
+  } else {
+    println "Ohh!! build not started"
+  }
 }
